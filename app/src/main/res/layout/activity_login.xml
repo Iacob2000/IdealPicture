@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Login"
+    android:background="#105E9C">
+
+    <TextView
+        android:id="@+id/tv_Login"
+        android:layout_width="315dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="217dp"
+        android:text="Pentru a plasa comanda t rugam sa te inregistrezi sau sau sa te loghezi in contul pe care il ai deja!"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress_Login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="exemple@yahoo.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Login"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_Login"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Login"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <EditText
+
+        android:id="@+id/editTextNumberPassword_Login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Pasword"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress_Login"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress_Login"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress_Login"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+
+
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="128dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="260dp"
+        android:text="LOGARE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/button_inregistrare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="198dp"
+        android:text="Nu ai cont? Intregistreaza-te aici!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_login"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#105E9C"
+    tools:context=".Formular_comanda_activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/ed_nume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Nume..." />
+
+            <EditText
+                android:id="@+id/ed_prenume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Prenume..." />
+
+            <EditText
+                android:id="@+id/ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="exemple@yahoo.com" />
+
+            <EditText
+                android:id="@+id/ed_adresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Adresa..."/>
+
+            <EditText
+                android:id="@+id/ed_telefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Numar de telefon..."/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="Detalii programare sedinta foto:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:text="Sedinta"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+
+            <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        app:srcCompat="@drawable/ic_baseline_photo_album_24" />
+
+            <TextView
+                        android:id="@+id/text_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:hint="Alege data:"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_pret_formular"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:text="Pret"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                        android:id="@+id/salveaza_comanda"
+                        android:layout_width="133dp"
+                        android:layout_height="wrap_content"
+                        android:text="Salveaza"
+                        android:textStyle="bold"
+                        android:layout_marginStart="140dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
