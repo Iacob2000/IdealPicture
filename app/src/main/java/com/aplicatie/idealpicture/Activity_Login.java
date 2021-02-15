@@ -36,6 +36,8 @@ EditText email ,parola;
             
             break;
             case R.id.button_inregistrare:
+                Intent intent = new Intent(Activity_Login.this,Activity_autentification.class);
+                startActivity(intent);
                 handleAutentificationClick();
                 break;
         }

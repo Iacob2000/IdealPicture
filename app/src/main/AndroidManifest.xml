@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IdealPicture">
-        <activity android:name=".Activity_autentification"></activity>
+        <activity android:name=".Activity_autentification"/>
         <activity android:name=".Activity_Login" />
         <activity android:name=".Desprenoi_activity" />
         <activity android:name=".Activity_contact" />
@@ -31,6 +31,7 @@
             android:name=".Detalii_sedinta_activity"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity" />
+
     </application>
 
 </manifest>
